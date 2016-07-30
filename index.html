@@ -1,57 +1,84 @@
- <html>
+<!DOCTYPE html>
+<html>
 <head>
-<style>
-div.img {
-    margin: 5px;
-    border: 1px solid #ccc;
-    float: left;
-    width: 180px;
-}
+	<style>
+		body{
+			text-align: center;
+		}
+		.container {
+			margin: 0 auto;
+		    -moz-column-count: 4;
+		    -moz-column-gap: 10px !important;
+		    -webkit-column-count: 4;
+		    -webkit-column-gap: 10px !important;
+		    column-count: 4;
+		    column-gap: 10px !important;
+		    width: 900px;
+		}
+		.container img {
+		    display: inline-block;
+		    width: 100%;
+		    margin-bottom: 10px;
+		}
+		a:hover {
+		  animation: changeOpacity 0.7s;
+		  -webkit-animation-iteration-count: 1; /* Chrome, Safari, Opera */
+    	  animation-iteration-count: 1;
+    	  animation-fill-mode: forwards;
+		}
 
-div.img:hover {
-    border: 1px solid #777;
-}
+		@keyframes changeOpacity {
+		  0% {
+		    opacity: 1;
+		  }
+		  100% {
+		    opacity: 0.6;
+		  }
+		}
+		.navbar .navbar-nav {
+		  display: inline-block;
+		  float: none;
+		  vertical-align: top;
+		}
 
-div.img img {
-    width: 100%;
-    height: auto;
-}
-
-div.desc {
-    padding: 15px;
-    text-align: center;
-}
-</style>
+		.navbar .navbar-collapse {
+		  text-align: center;
+		}
+		.bg-faded{
+			background-color: #fff !important;
+		}
+	</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.3/css/bootstrap.min.css" integrity="sha384-MIwDKRSSImVFAZCVLtU0LMDdON6KVCrZHyVQQj6e8wIEJkW4tvwqXrbMIya1vriY" crossorigin="anonymous">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.3/js/bootstrap.min.js" integrity="sha384-ux8v3A6CPtOTqOzMKiuo3d/DomGaaClxFYdCu2HPMBEkf6x2xiDyJ7gkXU0MWwaD" crossorigin="anonymous"></script>
 </head>
 <body>
-
-<div class="img">
-  <a target="_blank" href="http://www.gettyimages.ca/gi-resources/images/Homepage/Category-Creative/UK/UK_Creative_462809583.jpg">
-    <img src="fjords.jpg" alt="Fjords" width="300" height="200">
-  </a>
-  <div class="desc">Add a description of the image here</div>
+<h1>Emma Ziobryzinski</h1>
+<nav class="navbar navbar-light bg-faded">
+  <div class="nav navbar-nav">
+    <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
+    <a class="nav-item nav-link" href="#">Features</a>
+    <a class="nav-item nav-link" href="#">Pricing</a>
+    <a class="nav-item nav-link" href="#">About</a>
+  </div>
+</nav>
+<div class="container">
+    	<a href="#"><img src="https://cdn.theatlantic.com/assets/media/img/photo/2015/11/images-from-the-2016-sony-world-pho/s01_130921474920553591/main_900.jpg?1448476701"></a>
+        <a href="#"><img src="http://i164.photobucket.com/albums/u8/hemi1hemi/COLOR/COL9-6.jpg"></a>
+        <a href="#"><img src="https://cdn.theatlantic.com/assets/media/img/photo/2015/11/images-from-the-2016-sony-world-pho/s01_130921474920553591/main_900.jpg?1448476701"></a>
+        <a href="#"><img src="http://i164.photobucket.com/albums/u8/hemi1hemi/COLOR/COL9-6.jpg"></a>
+        <a href="#"><img src="https://cdn.theatlantic.com/assets/media/img/photo/2015/11/images-from-the-2016-sony-world-pho/s01_130921474920553591/main_900.jpg?1448476701"></a>
+        <a href="#"><img src="http://i164.photobucket.com/albums/u8/hemi1hemi/COLOR/COL9-6.jpg"></a>
+        <a href="#"><img src="https://cdn.theatlantic.com/assets/media/img/photo/2015/11/images-from-the-2016-sony-world-pho/s01_130921474920553591/main_900.jpg?1448476701"></a>
+        <a href="#"><img src="http://i164.photobucket.com/albums/u8/hemi1hemi/COLOR/COL9-6.jpg"></a>
+        <a href="#"><img src="https://cdn.theatlantic.com/assets/media/img/photo/2015/11/images-from-the-2016-sony-world-pho/s01_130921474920553591/main_900.jpg?1448476701"></a>
+        <a href="#"><img src="http://i164.photobucket.com/albums/u8/hemi1hemi/COLOR/COL9-6.jpg"></a>
+        <a href="#"><img src="https://cdn.theatlantic.com/assets/media/img/photo/2015/11/images-from-the-2016-sony-world-pho/s01_130921474920553591/main_900.jpg?1448476701"></a>
 </div>
-
-<div class="img">
-  <a target="_blank" href="http://www.gettyimages.ca/gi-resources/images/Homepage/Category-Creative/UK/UK_Creative_462809583.jpg">
-    <img src="forest.jpg" alt="Forest" width="300" height="200">
-  </a>
-  <div class="desc">Add a description of the image here</div>
-</div>
-
-<div class="img">
-  <a target="_blank" href="http://www.gettyimages.ca/gi-resources/images/Homepage/Category-Creative/UK/UK_Creative_462809583.jpg">
-    <img src="lights.jpg" alt="Northern Lights" width="300" height="200">
-  </a>
-  <div class="desc">Add a description of the image here</div>
-</div>
-
-<div class="img">
-  <a target="_blank" href="http://www.gettyimages.ca/gi-resources/images/Homepage/Category-Creative/UK/UK_Creative_462809583.jpg">
-    <img src="mountains.jpg" alt="Mountains" width="300" height="200">
-  </a>
-  <div class="desc">Add a description of the image here</div>
-</div>
-
+<script type="text/javascript">
+	// $(".container div").css( "height", function(v){
+	//     return Math.random() * 250 + 100 | 0 
+	// });
+</script>
 </body>
-</html> 
+</html>
